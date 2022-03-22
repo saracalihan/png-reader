@@ -40,12 +40,13 @@ Image readImage(char *path)
     image.data = data;
     image.size = size;
 
+    file.close();
     return image;
 }
 
 bool setChunks(Image *image)
 {
-    cout <<"size "<< strlen(image->data);
+    /*chunk uzunlugu kullanilarak chunklar bir dizide tutulmali*/
     return 1;
 }
 
